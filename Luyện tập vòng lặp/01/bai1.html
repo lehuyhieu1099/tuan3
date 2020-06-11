@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện tập vòng lặp </title>
+</head>
+
+<body>
+    <script>
+        //Bài 1: Sử dụng vòng lặp để đếm từ 1 đến 100. Khi số là 99, hiển thị hộp thoại thông báo là đã hoàn thành.
+        // for (i = 1; i <= 99; i++) {
+        //     document.write(i + '  ');
+        // } 
+        // alert('Đã hoàn thành');
+        // Bài 2:Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập. 
+        // Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ. Nếu nhiệt độ dưới 20, yêu cầu 
+        // người dùng tăng nhiệt độ.
+
+        // let nhietDo = +prompt('Nhập nhiệt độ: ');
+        // while (nhietDo > 100 || nhietDo < 20) {
+        //     if (nhietDo > 100) {
+        //         alert('Yêu cầu giảm nhiệt độ');
+        //         nhietDo = +prompt('Nhập nhiệt độ: ');
+
+        //     } else if (nhietDo < 20) {
+        //         alert('Yêu cầu tăng nhiệt độ');
+        //         nhietDo = +prompt('Nhập nhiệt độ: ');
+        //     }
+        // }
+        // alert('Nhiệt độ là' + nhietDo);
+
+
+        // Bài 3: Hiển thị ra 20 số đầu tiên trong dãy fibonacci .
+        // let numbers = +prompt('Số chữ số fibonacci cần in ra');
+        // count = 2;
+        // fibonacci()
+
+        // function fibonacci(number) {
+        //     let a = 1;
+        //     let b = 1;
+        //     let c = 0;
+        //     document.write(a + ' ' + b + ' ');
+        //     while (count < numbers) {
+        //         document.write(a + b + '  ');
+        //         c = a + b;
+        //         a = b;
+        //         b = c;
+        //         count++;
+        //     }
+        // }
+        // Bài 4: Tìm số đầu tiên trong dãy fibonacci chia hết cho 5.
+        fibonaccicheck()
+        function fibonaccicheck(number) {
+            let a = 1;
+            let b = 1;
+            let c = 0;
+            dem = 0;
+            document.write(a + ' ' + b + ' ');
+            while (dem != 1) {
+                if ((a+b) % 5== 0){alert('Số đầu tiên trong dãy fibonacci chia hết cho 5 là: '+(a+b));dem++;}
+                c = a + b;
+                a = b;
+                b = c;
+            }
+        }
+        // Bài 5: Tính tổng 20 số đầu tiên trong dãy fibonacii
+        // let numbers = +prompt('Số chữ số fibonacci cần tính tổng');
+        // count = 2;
+        // let a = 1;
+        // let b = 1;
+        // let c = 0;
+        // s = 2;
+        // while (count < numbers) {
+        //     c = a + b;
+        //     s = s + c;
+        //     a = b;
+        //     b = c;
+        //     count++;
+        // }
+        // document.write(s)
+        // Bài 6: Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên
+        // let s = 0;
+        // let N = 0;
+        // let count = 0;
+        // while (count<30){
+        //     if (N%7==0){s = s + N;
+        //     count++;}
+        //     N++;
+        // }
+        // document.write('Tổng 30 số chia hết cho 7 đầu tiên trong các số tự nhiên là: '+s)
+        // Bài 7:
+        // for (i = 1; i <= 99; i++) {
+        //     if (i % 3 == 0) { 
+        //         document.write('Fizz' + ' ') 
+        //         } else if (i % 5 == 0) { 
+        //             document.write('Buzz' + ' ') 
+        //         } else if (i % 5 == 0 && i % 3 == 0) { 
+        //             document.write('FizzBuzz' + '  ') 
+        //             } else { document.write(i + ' ') }
+
+        // }
+        // Bài 8: 
+        
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
