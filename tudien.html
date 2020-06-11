@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Từ điển</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="3"> Từ điển Anh - Việt</td>
+        </tr>
+        <tr>
+            <td>Anh: <br><input type="text" id="input" spaceholder="Nhập từ cần dịch"></td>
+            <td>Việt: <br><input readonly id="result"></td>
+            <td><br><input type="button" value="Dịch" onclick="dich()"></td>
+        </tr>
+    </table>
+    <script>
+        function dich() {
+            let anh = ['one', 'two', 'three', 'four', 'five'];
+            let viet = ['một', 'hai', 'ba', 'bốn', 'năm'];
+            let check;
+            for (let i = 0; i < anh.length; i++) {
+                if (document.getElementById('input').value == anh[i]) {
+                    document.getElementById('result').value = viet[i];
+                    check = true;
+                    break;
+                }
+                
+            }if (!check ) { alert('Không có dữ liệu nhập vào') };
+        }
+
+    </script>
+
+</body>
+
+</html>
